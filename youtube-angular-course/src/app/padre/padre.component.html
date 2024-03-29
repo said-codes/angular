@@ -1,0 +1,24 @@
+<!--<div>
+  <h1>Contador : </h1>
+  <p>{{valorContador}}</p>
+</div>
+
+<app-hijo [recibeHijo]="mensajePadre"
+ (mensajeDesdeHijo)="recibirMensaje($event)"
+ (incrementarDesdeHijo)="incrementar()"
+ (decrementarDesdeHijo)="decrementar()"
+ ></app-hijo>
+
+<div>
+  <p>El mensaje recibido desde el hijo es : {{mensajeRecibido}}</p>
+</div>
+-->
+
+<h2>fecha de hoy : {{fecha | date:'dd/MM/yyyy'}}</h2>
+<h2>a cuanto cotiza el dolar hoy : {{dolar | currency : 'EUR'}}</h2>
+<h2>el numero pi es : {{pi | number: '1.2-2'}}</h2>
+<h2>el factor es : {{factor | percent}}</h2>
+<br>
+<h2 appEstiloHermanos>{{nombre | miPipePersonalizado}}</h2>
+<button type="button" (click)="saludar()">saludar</button>
+<button type="button" (click)="preguntar()">preguntar por hijo</button>
